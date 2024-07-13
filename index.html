@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#" class="logo">
+                <img src="./assets/logo.png" alt="logoSitio">
+                <!-- cambiar img de logo -->
+            </a>
+            <nav>
+                <input type="text" placeholder="Buscar" >
+                <button> LUPA? </button>
+            </nav>
+            <div class="botonesHeader">
+                <Button class="iniciarSesion"><a href="./pages/iniciar-sesion.html" ><i class="fa-solid fa-right-to-bracket"></i>Inicia Sesión</a></Button>
+                <Button class="carrito"><a href="./pages/carrito.html" ><i class="fa-solid fa-cart-shopping"></i>Carrito</a></Button>
+                <!-- <a href="" class="modoOscuro"><i class="fa-solid fa-moon"></i></a> -->
+            </div>
+            
+        </div>
+        <div class="categorias">
+            <ul>
+                <button>GUITARRAS</button>
+                <button>BAJOS</button>
+                <button>BATERIAS</button>
+                <button>SONIDOS</button>
+                <button>ACCESORIOS</button>
+                <button class="ofertas">OFERTAS</button>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="publicidad?">
+            <article>
+                <a href=""><img src="" alt=""></a>
+            </article>
+        </section>
+        <section class="articulos">
+            <div class="filtro">
+                <h3 class="filtroTitulo">Filtro</h3>
+                <ul>
+                    <li>Marca<button class="botonDesplegar">v</button></li> <!-- falta que cuando se clickea se desplieguen las marcas-->
+                    <li>Instrumento <button class="botonDesplegar">v</button></li> <!-- falta que cuando se clickea se desplieguen las marcas-->
+                    <!-- creo que va un FORM -->
+                    <li >Oferta <input type="radio" name="ofertaCheck" id="ofertaCheck"></li> 
+                    <li>Precio <input type="text" class="precioMinMax"><input type="text" class ="precioMinMax"><button>></button></li> <!-- Falta casilleros adentro -->
+                </ul>
+            </div>
+            <div class="articulosVenta">
+                <ul>
+                    <li class="art-1">
+                        <!-- CAPAZ HAY QUE PONER LA IMG EN UN DIV PARA DARLE BIEN LAS PROPIEDADES 21.26 class 5-->
+                        <img src="./assets/guitarra1.png" alt="fotoDelArticulo">
+                        <h3>$1.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                    <li class="art-2">
+                        <img src="./assets/guitarra2.png" alt="fotoDelArticulo">
+                        <h3>$2.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                    <li class="art-3">
+                        <a href=""><img src="./assets/guitarra3.png" alt="fotoDelArticulo"></a>
+                        <h3>$3.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                    <li class="art-4">
+                        <a href=""><img src="./assets/guitarra4.png" alt="fotoDelArticulo"></a>
+                        <h3>$4.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                    <li class="art-5">
+                        <a href=""><img src="./assets/guitarra5.png" alt="fotoDelArticulo"></a>
+                        <h3>$5.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                    <li class="art-6">
+                        <a href=""><img src="./assets/guitarra6.png" alt="fotoDelArticulo"></a>
+                        <h3>$6.000.000</h3>
+                        <p>Guitarra Electrica Ibanez S970cwnt Ser. Premium</p>
+                        <button class="comprar">
+                            <p>COMPRAR</p>
+                            <img src="" alt="agregarCarrito">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="marcas">
+            <div class="contenedorMarcas">
+                <div class="epiphone"><a href="" class="epiphone"><img src="./assets/epiphone.png" alt=""></a></div>
+                <div class="fender"><a href="" class="fender"><img src="./assets/fender.png" alt=""></a></div>
+                <div class="gibson"><a href="" class="gibson"><img src="./assets/gibson.png" alt=""></a></div>
+                <div class="marshall"><a href="" class="marshall"><img src="./assets/marshall.png" alt=""></a></div>
+                <div class="schecter"><a href="" class="schecter"><img src="./assets/schecter.png" alt=""></a></div>
+            </div>
+        </section>
+        <section class="footer">
+            <article class="atencionCliente">
+                <h2 class="h2AtencionCliente">Atención al cliente</h2>
+                <p><a href="" class="preguntasFrecuentes">Preguntas frecuentes</a></p>
+                <p><a href="" class="TyC">Terminos y Condiciones</a></p>
+                <p><a href="" class="metodosDePago">Métodos de pago</a></p>
+            </article>
+            <article class="contactanos">
+                <a href="./pages/contacto.html" class="contactanos"><h2 class="contactanos">Contactános</h2></a>
+                <p class="mail">Earl_Mertz@hotmail.com</p>
+                <p class="telefono">Tel 893308376</p>
+                <p class="direccion">1068 Iva Creek, New Ahmadchester</p>
+            </article>
+            <article class="seguinos">
+                <a href="./pages/nosotros.html"><h2>Sobre Nosotros</h2></a>
+                <h2 class="seguinos">Seguinos en redes</h2>
+                <div class="iconos">
+                    <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://x.com" class="twitter" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" class="youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

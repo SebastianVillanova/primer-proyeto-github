@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #f8f8f8; */
+    font-family: "Roboto", sans-serif;
+}
+
+/* si esta en direction row para alinear horizontal va a ser justify-content y vertical align-items
+si esta en direction column align-items alinea horizontal y justify-content en vertical */
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div .logo img {
+    background-color: red;
+    width: 9.375rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.1875rem;
+}
+
+header div nav input{
+    width: 25rem;
+    height: 1.875rem;
+    border-radius: 1.25rem;
+}
+
+/* barra de botones (inicia sesion y carrito) */
+header div .botonesHeader button{
+    margin: 10px;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 0.3125rem;
+    border: 0.0313rem solid #000;
+}
+
+/* barra de botones (categoria) */
+header .categorias {
+    background-color: black;
+}
+
+header .categorias ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* cada boton de categorias */
+header .categorias ul button {
+    /* background-color: #56D928; */
+    width: 7.5rem;
+    height: 3.125rem;
+    /* border-radius: 0.25rem; */
+    margin: 0.1875rem;
+}
+
+
+header .categorias ul .ofertas{
+    background-color: #fd2e2eec ;
+}
+
+/* revisarrrrrrrrrrrrrrrrrr ---------------- */
+main section{
+    display: flex;
+    justify-content: center;
+}
+
+/* filtro general*/
+main .articulos div.filtro {
+    margin: 1.25rem;
+    width: 18.75rem;
+    height: 400px;
+    border: 0.0625rem solid black;
+    
+}
+main .articulos div.filtro h3.filtroTitulo{
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+/* cada filtro (marca instrumento etc) */
+main .articulos div.filtro ul{
+    margin: 1.25rem;
+    padding: 0.3125rem;
+    list-style: none;
+    
+}
+
+main .articulos div.filtro ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+
+/* boton para desplegar filtros */
+main .articulos div.filtro ul li .botonDesplegar{
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+}
+
+main .articulos .filtro ul li input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    overflow: hidden;
+}
+
+main .articulos .filtro ul li .precioMinMax{
+    width: 60px;
+    height: 20px;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+main .articulos .articulosVenta ul {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    list-style: none;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "art-1 art-2 art-3"
+    "art-4 art-5 art-6";
+}
+
+/* articulos en venta */
+main .articulos .articulosVenta ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 5px;
+    height: 25rem;
+    width: 18.75rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.4375rem;
+    list-style: none;
+}
+
+main .articulos .articulosVenta ul li.art-1{
+    grid-area: art-1;
+}
+main .articulos .articulosVenta ul li.art-2{
+    grid-area: art-2;
+}
+main .articulos .articulosVenta ul li.art-3{
+    grid-area: art-3;
+}
+main .articulos .articulosVenta ul li.art-4{
+    grid-area: art-4;
+}
+main .articulos .articulosVenta ul li.art-5{
+    grid-area: art-5;
+}
+main .articulos .articulosVenta ul li.art-6{
+    grid-area: art-6;
+}
+
+main .articulos .articulosVenta ul li img{
+    height: 12.5rem;
+    width: 12.5rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.4375rem;
+}
+
+main .articulos .articulosVenta ul li p{
+    margin: 0.625rem;
+    font-size: 0.75rem;
+}
+/* boton de comprar */
+main .articulos .articulosVenta ul li button{
+    /* falta alinear uno al lado del otro */
+    border: 0.0625rem solid black;
+    border-radius: 0.1875rem;
+    align-items: center;
+    font-size: 0.625rem;
+}
+
+/*  contenedor marcas */
+footer .marcas .contenedorMarcas{
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* imagenes de marcas */
+footer .marcas .contenedorMarcas div img {
+    width: 150px;
+    height: 100%;
+    border: 1px solid black;
+}
+
+footer section.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+footer section article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* links del footer */
+footer a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    
+    /* padding: 0.625rem; */
+}
+
+footer section.footer{
+    color: white;
+    background-color: #383838;
+}
+
+footer section.footer .seguinos .iconos{
+    /* background-color: #0866ff; */
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+footer section.footer .seguinos .iconos a i{
+    height: 30px;
+    width: 30px;
+}
+
+/* FALTA ACOMODAR EL TAMAÑO DE LOS ICONOS */
+footer section.footer .seguinos .iconos .facebook{
+    color: #0866ff;
+    background-color: white;
+}
+
+footer section.footer .seguinos .iconos .twitter{
+    color: #000;
+    background-color: white;
+}
+
+footer section.footer .seguinos .iconos .instagram{
+    color: hsl(350, 92%, 75%);
+    background-color: white;
+}
+
+footer section.footer .seguinos .iconos .youtube{
+    color: red;
+    background-color: white;
+}
+
+/* ---------------------------------------CARRITO--------------------------------------- */
+
+main section .carritoGeneral{
+    margin: 0.3125rem;
+    border: 0.0625rem solid black;
+}
+
+main section .carritoGeneral .descripcion{
+    margin: 0.3125rem;
+    border: 0.0625rem solid black;
+    width: 62.5rem;
+}
+
+main section .carritoGeneral .descripcion ul{
+    display: flex;
+    border-bottom: 0.0625rem solid black;    
+    list-style: none;
+
+}
+
+main section .carritoGeneral .descripcion ul li{
+    margin: 0.625rem;
+}
+
+main section .carritoGeneral .descripcion ul li .articuloCarrito {
+    margin: 0.3125rem;
+    border: 0.0625rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main section .carritoGeneral .descripcion ul li .articuloCarrito img {
+    margin: 0.3125rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.375rem;
+}
+
+main section div .finalizarCompra button{
+    width: 18.75rem;
+    height: 6.25rem;
+    border: 1px solid black;
+    border-radius: 0.625rem;
+}
+main section div .finalizarCompra .continuarComprando{
+    background-color: #D9D9D9;
+}
+
+main section div .finalizarCompra .confirmarCompra{
+    background-color: #56D928;
+}
+
+
+
+/* --------------------------------------- CONTACTO --------------------------------------- */
+
+main section div input{
+    width: 25rem;
+    height: 3.125rem;
+}
+
+main section .textoContacto input{
+    width: 800px;
+    height: 18.75rem;
+}
