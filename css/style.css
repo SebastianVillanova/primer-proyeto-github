@@ -29,7 +29,7 @@ header div nav input{
 
 /* barra de botones (inicia sesion y carrito) */
 header div .botonesHeader button{
-    margin: 10px;
+    margin: 0.625rem;
     width: 6.25rem;
     height: 6.25rem;
     border-radius: 0.3125rem;
@@ -44,6 +44,7 @@ header .categorias {
 header .categorias ul {
     display: flex;
     justify-content: space-evenly;
+    list-style: none;
 }
 
 /* cada boton de categorias */
@@ -75,7 +76,7 @@ main .articulos div.filtro {
     
 }
 main .articulos div.filtro h3.filtroTitulo{
-    margin-left: 30px;
+    margin-left: 1.875rem;
     text-decoration: underline;
 }
 
@@ -91,28 +92,28 @@ main .articulos div.filtro ul li {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 
 /* boton para desplegar filtros */
 main .articulos div.filtro ul li .botonDesplegar{
-    border-radius: 5px;
-    margin: 0 10px 0 10px;
+    border-radius: 0.3125rem;
+    margin: 0 0.625rem 0 0.625rem;
 }
 
 main .articulos .filtro ul li input{
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 0.0625rem solid black;
     /* border-radius: 10px; */
     overflow: hidden;
 }
 
 main .articulos .filtro ul li .precioMinMax{
-    width: 60px;
-    height: 20px;
-    margin: 0 10px 0 10px;
-    border-radius: 5px;
+    width: 3.75rem;
+    height: 1.25rem;
+    margin: 0 0.625rem 0 0.625rem;
+    border-radius: 0.3125rem;
 }
 
 main .articulos .articulosVenta ul {
@@ -138,7 +139,7 @@ main .articulos .articulosVenta ul li{
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    margin: 5px;
+    margin: 0.3125rem;
     height: 25rem;
     width: 18.75rem;
     border: 0.0625rem solid black;
@@ -188,6 +189,8 @@ main .articulos .articulosVenta ul li button{
 /*  contenedor marcas */
 footer .marcas .contenedorMarcas{
     background-color: grey;
+    width: 100%;
+    height: 9.375rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -195,9 +198,11 @@ footer .marcas .contenedorMarcas{
 
 /* imagenes de marcas */
 footer .marcas .contenedorMarcas div img {
-    width: 150px;
+    width: 9.375rem;
     height: 100%;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
+    align-self: center;
+
 }
 
 footer section.footer {
@@ -228,11 +233,11 @@ footer section.footer .seguinos .iconos{
     /* background-color: #0866ff; */
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: 12.5rem;
 }
 footer section.footer .seguinos .iconos a i{
-    height: 30px;
-    width: 30px;
+    height: 1.875rem;
+    width: 1.875rem;
 }
 
 /* FALTA ACOMODAR EL TAMAÑO DE LOS ICONOS */
@@ -296,7 +301,7 @@ main section .carritoGeneral .descripcion ul li .articuloCarrito img {
 main section div .finalizarCompra button{
     width: 18.75rem;
     height: 6.25rem;
-    border: 1px solid black;
+    border: 0.0625rem solid black;
     border-radius: 0.625rem;
 }
 main section div .finalizarCompra .continuarComprando{
@@ -317,6 +322,52 @@ main section div input{
 }
 
 main section .textoContacto input{
-    width: 800px;
+    width: 50rem;
     height: 18.75rem;
 }
+
+
+/* --------------------------------------- INICIARSESION --------------------------------------- */
+
+main section article .login {
+    display: flex;
+    flex-direction: column;
+    padding: 0.9375rem;
+    margin: 0.625rem;
+    border: 0.0625rem solid black;
+}
+
+main section article .login input{
+    border-radius: 0.3125rem;
+    
+    font-size: 1.875rem;
+    margin:  0.625rem 0 0.625rem 0;
+}
+
+main section article .login a{
+    text-decoration: none;
+    align-self: end;
+    margin-right: 0.3125rem;
+}
+
+/* contenedor de botones */
+main section .iniciarSesion .login .botonesLogin{
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem 0 1.25rem 0;
+    margin: 0.625rem;
+}
+
+/* boton ingresar y atras */
+main section .iniciarSesion .login .botonesLogin button{
+    margin: 0.625rem;
+    padding: 0.625rem;
+    width: 18.75rem;
+    height: 3.125rem;
+    border-radius: 0.625rem;
+}
+
+
+
