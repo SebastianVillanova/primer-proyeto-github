@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: #f8f8f8; */
+    background-color: #f8f8f8;
     font-family: "Roboto", sans-serif;
 }
 
@@ -28,7 +28,7 @@ header div nav input{
 }
 
 /* barra de botones (inicia sesion y carrito) */
-header div .botonesHeader button{
+header div .botonesHeader .iniciarSesion{
     margin: 0.625rem;
     width: 6.25rem;
     height: 6.25rem;
@@ -39,10 +39,13 @@ header div .botonesHeader button{
 /* barra de botones (categoria) */
 header .categorias {
     background-color: black;
+    width: 100%;
 }
 
 header .categorias ul {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
 }
@@ -52,7 +55,8 @@ header .categorias ul button {
     /* background-color: #56D928; */
     width: 7.5rem;
     height: 3.125rem;
-    /* border-radius: 0.25rem; */
+    border: 1px solid black;
+    border-radius: 0.25rem;
     margin: 0.1875rem;
 }
 
@@ -315,18 +319,48 @@ main section div .finalizarCompra .confirmarCompra{
 
 
 /* --------------------------------------- CONTACTO --------------------------------------- */
+main section .contacto-general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-main section div input{
+
+main section form{
+    display: flex;
+    flex-direction: column;
+    padding: 0.625rem;
+    align-items: center;
+}
+
+main section form input{
+    margin: 0.625rem;
     width: 25rem;
     height: 3.125rem;
+    border: 0.0625rem solid black;
+    border-radius: 0.25rem;
+    
 }
 
-main section .textoContacto input{
+main section form .inputTextoContacto{
     width: 50rem;
     height: 18.75rem;
+    text-align: center;
+    /***** falta que el texto se escriba en varias lineas y no solo en 1 ******/
 }
 
+main section .contacto-general button{
+    width: 12.5rem;
+    height: 3.125rem;
+    margin-bottom: 3.125rem;
+    background-color: #56D928;
+    border: 0.0625rem solid black;
+    border-radius: 0.375rem;
+}
 
+main section .contacto-general button:hover{
+    background-color: #6edb46da;
+}
 /* --------------------------------------- INICIARSESION --------------------------------------- */
 
 main section article .login {
