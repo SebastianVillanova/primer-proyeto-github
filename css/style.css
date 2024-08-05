@@ -22,7 +22,7 @@ header a.logo{
 
 header div .logo img {
     background-color: red;
-    width: 9.375rem;
+    width: 150px;
     border: 0.0625rem solid black;
     border-radius: 0.1875rem;
 }
@@ -48,25 +48,26 @@ header div .botonesHeader a{
 header div .botonesHeader div{
     margin-right: 10px;
     align-self: center;
+    height: 100%;
 }
+
 /* barra de botones (categoria) */
 header .categorias {
     background-color: black;
     width: 100%;
     height: 100px;
-}
-
-header .categorias ul {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    list-style: none;
 }
 
+header .categorias ul{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 /* cada boton de categorias */
-header .categorias ul button {
-    /* background-color: #56D928; */
+header .categorias button {
     width: 7.5rem;
     height: 3.125rem;
     border: 1px solid black;
@@ -77,10 +78,6 @@ header .categorias ul button {
 }
 
 
-header .categorias ul .ofertas{
-    background-color: #fd2e2eec ;
-}
-
 /* revisarrrrrrrrrrrrrrrrrr ---------------- */
 main section{
     display: flex;
@@ -88,29 +85,28 @@ main section{
 }
 
 /* filtro general*/
-main .articulos div.filtro {
+main .articulos .filtro {
     margin: 1.25rem;
-    width: 18.75rem;
-    height: 400px;
+    width: 300px;
+    height: 250px;
     border: 0.0625rem solid black;
-    
 }
-main .articulos div.filtro h3.filtroTitulo{
+main .articulos .filtro h3.filtroTitulo{
     margin-left: 1.875rem;
+    margin-top: 0.625rem;
     text-decoration: underline;
 }
 
 /* cada filtro (marca instrumento etc) */
-main .articulos div.filtro ul{
+main .articulos .filtro ul{
     margin: 1.25rem;
     padding: 0.3125rem;
     list-style: none;
-    
 }
 
-main .articulos div.filtro ul li {
+main .articulos .filtro ul li {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 0.3125rem;
 }
@@ -118,15 +114,12 @@ main .articulos div.filtro ul li {
 /* boton para desplegar filtros */
 main .articulos div.filtro ul li .botonDesplegar{
     border-radius: 0.3125rem;
-    margin: 0 0.625rem 0 0.625rem;
 }
 
 main .articulos .filtro ul li input{
     width: 1.25rem;
     height: 1.25rem;
     border: 0.0625rem solid black;
-    /* border-radius: 10px; */
-    overflow: hidden;
 }
 
 main .articulos .filtro ul li .precioMinMax{
@@ -206,6 +199,7 @@ main .articulos .articulosVenta ul li button{
 main nav {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 /*  contenedor marcas */
 footer .marcas .contenedorMarcas{
@@ -284,46 +278,16 @@ footer section.footer .seguinos .iconos .youtube{
 }
 
 /* MEDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
-@media(max-width: 768px){
-    header div {
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        justify-content: end;
-        align-items: center;
-    }
-    header form{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    header div .botonesHeader div{
-        display: flex;
-        justify-content: center;
-    }
 
-    header .categorias{
-        padding: 0px;
-        width: 100%;
-        height: 375px;
-        background-color: red;
-        justify-content: center;
-        align-items: center;
-    }
-    header .categorias ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 400px;
-        padding: 0;
-    }
+
+@media(max-width: 1270px){
 
     main .articulos{
         display: flex;
         flex-direction: column;
-        height: 1500PX;
+        /* height: 1600px; */
+        align-items: center;
+
         width: 100%;
     }
 
@@ -356,28 +320,45 @@ footer section.footer .seguinos .iconos .youtube{
         list-style: none;
     }
     
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-1{
-        grid-area: art-1;
-    }
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-2{
-        grid-area: art-2;
-    }
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-3{
-        grid-area: art-3;
-    }
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-4{
-        grid-area: art-4;
-    }
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-5{
-        grid-area: art-5;
-    }
-    main .articulos .articulosVenta ul.cadaArticuloVenta li.art-6{
-        grid-area: art-6;
-}
+
     main .articulos .articulosVenta nav{
         display: flex;
+        margin-top: 4.375rem;
         flex-direction: column;
+        align-items: center;
         /* revisar por que se superpone con articulos */
+    }
+
+ 
+}
+
+
+@media(max-width: 880px){
+
+    header div.botonesHeader{
+        display: flex;
+        flex-direction: column;
+    }
+    header form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header div .botonesHeader div{
+        display: flex;
+        justify-content: center;
+    } */
+
+
+    header .categorias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 400px;
+        padding: 0;
     }
 
     footer {
@@ -392,8 +373,9 @@ footer section.footer .seguinos .iconos .youtube{
         width: 100%;
         display: flex;
         justify-content: space-evenly;
+        
     }
-    
+
     footer .marcas .contenedorMarcas div a img{
         width:100px;
         height: 100%;
@@ -413,7 +395,61 @@ footer section.footer .seguinos .iconos .youtube{
         width: 100%;
         padding: 10px;
     }
+}
 
+@media(max-width:690px){
+    
+    header div {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        align-items: center;
+    } 
+
+    header .categorias{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .articulos {
+        justify-content: start;
+    }
+
+    main .articulos .articulosVenta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 2550px;
+    }
+
+    main .articulos .articulosVenta nav{
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+        align-items: end;
+    }
+
+    main .articulos .articulosVenta ul.cadaArticuloVenta {
+        list-style: none;
+        padding: 20px;
+        display: grid;
+        width: 100%;
+        height: 1200px;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "art-1" 
+        "art-2"
+        "art-3"
+        "art-4"
+        "art-5"
+        "art-6";
+    }
+
+}
 /* ---------------------------------------CARRITO--------------------------------------- */
 
 main section .carritoGeneral{
