@@ -29,9 +29,11 @@ header div .logo img {
 
 header div .d-flex input{
     display: flex;
+    margin: 0.3125rem;
     width: 25rem;
     height: 1.875rem;
     border-radius: 1.25rem;
+    
 }
 
 /* barra de botones (inicia sesion y carrito) */
@@ -44,6 +46,8 @@ header div .botonesHeader a{
     border-radius: 0.3125rem;
     border: 0.0313rem solid #000;
     box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
+    text-decoration: none;
+
 }
 
 header div .botonesHeader div{
@@ -291,7 +295,7 @@ footer section.footer .seguinos .iconos .youtube{
 /* MEDIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
 
 
-@media(max-width: 1270px){
+@media(max-width: 1280px){
 
     main .articulos{
         display: flex;
@@ -347,7 +351,7 @@ footer section.footer .seguinos .iconos .youtube{
 }
 
 
-@media(max-width: 880px){
+@media(max-width: 900px){
 
     header div.botonesHeader{
         display: flex;
@@ -386,6 +390,10 @@ footer section.footer .seguinos .iconos .youtube{
         display: flex;
         justify-content: space-evenly;
         
+    }
+
+    footer .marcas .contenedorMarcas {
+        height: 100px;
     }
 
     footer .marcas .contenedorMarcas div a img{
@@ -431,8 +439,6 @@ footer section.footer .seguinos .iconos .youtube{
         justify-content: center;
     }
 
-    
-
     main .articulos {
         justify-content: start;
     }
@@ -475,7 +481,7 @@ footer section.footer .seguinos .iconos .youtube{
 
 }
 
-@media(max-width:500px){
+@media(max-width:515px){
     footer .marcas .contenedorMarcas{
         height: 75px;
     }
@@ -627,8 +633,6 @@ main section form .inputTextoContacto{
     width: 50rem;
     height: 18.75rem;
     text-align: justify;
-    
-    /***** falta que el texto se escriba en varias lineas y no solo en 1 ******/
 }
 
 main section .contacto-general button{
@@ -638,11 +642,15 @@ main section .contacto-general button{
     background-color: #56D928;
     border: 0.0625rem solid black;
     border-radius: 0.375rem;
+
 }
 
 main section .contacto-general button:hover{
     background-color: #6edb46da;
 }
+
+
+
 /* --------------------------------------- INICIARSESION --------------------------------------- */
 
 main section .iniciarSesion {
@@ -663,8 +671,7 @@ main section article .login {
 
 main section article .login input{
     border-radius: 0.3125rem;
-    
-    font-size: 1.875rem;
+    font-size: 25px;
     margin:  0.625rem 0 0.625rem 0;
 }
 
@@ -690,4 +697,44 @@ main section .iniciarSesion .login .botonesLogin button{
     width: 18.75rem;
     height: 3.125rem;
     border-radius: 0.625rem;
+}
+
+@media(max-width:690px){
+    main section article .login {
+        width: 250px;
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid black;
+    }
+    
+    main section article .login input{
+        border-radius: 5px;
+        font-size: 1.5625rem;
+        margin:  10px 0 10px 0;
+    }
+    
+    main section article .login a{
+        text-decoration: none;
+        align-self: end;
+        margin-right: 5px;
+    }
+    
+    /* contenedor de botones */
+    main section .iniciarSesion .login .botonesLogin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0 20px 0;
+        margin: 10px;
+
+    }
+    
+    /* boton ingresar y atras */
+    main section .iniciarSesion .login .botonesLogin button{
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+    }
 }
