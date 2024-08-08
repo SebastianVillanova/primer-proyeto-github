@@ -622,6 +622,7 @@ main section form{
 
 main section form input{
     margin: 0.625rem;
+    padding-left: 5px;
     width: 25rem;
     height: 3.125rem;
     border: 0.0625rem solid black;
@@ -630,9 +631,14 @@ main section form input{
 }
 
 main section form .inputTextoContacto{
+    padding-left: 5px;
+    margin-top: 0.625rem;
     width: 50rem;
     height: 18.75rem;
     text-align: justify;
+    border: 0.0625rem solid black;
+    border-radius: 0.25rem;
+    box-shadow: 0.1875rem 0.1875rem rgba(0, 0, 0, 0.105);
 }
 
 main section .contacto-general button{
@@ -649,6 +655,17 @@ main section .contacto-general button:hover{
     background-color: #6edb46da;
 }
 
+
+@media(max-width:900px){
+    main section .contacto-general     h1{
+        width: 400px;
+    }
+
+    main section form .inputTextoContacto{
+        width: 400px;
+        height: 300px;
+    }
+}
 
 
 /* --------------------------------------- INICIARSESION --------------------------------------- */
